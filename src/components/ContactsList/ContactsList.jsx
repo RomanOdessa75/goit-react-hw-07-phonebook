@@ -24,8 +24,8 @@ export const ContactList = () => {
   return (
     <div className={css.wraperContactList}>
       <ul className={css.contactList}>
-        {visibleContacts.map((contact, id) => (
-          <li key={id} className={css.contactListItem}>
+        {visibleContacts.map(contact => (
+          <li key={contact.id} className={css.contactListItem}>
             {contact.name}: {contact.phone}
             <button
               type="button"
